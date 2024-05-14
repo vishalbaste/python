@@ -4,7 +4,7 @@ def createFile(filename):
 
 def storeData(filename,data):
     file = open(filename,'a')
-    file.write(data)
+    file.write(data + "\n")
     print("Data Added")
 
 def readLines(filename):
@@ -25,7 +25,7 @@ def readData(filename):
     content = file.read()
     print(f"{filename} data is : ",content)
 # createFile('employee.txt')
-# storeData('employee.txt','Hello World')
+storeData('employee.txt','Hello World')
 # readLines('employee.txt')
 # getWordCount('employee.txt')
-readData('employee.txt')
+# readData('employee.txt')
